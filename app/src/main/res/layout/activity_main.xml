@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_animation"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/trivialogo">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2sp"
+        android:paddingBottom="2sp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="What is your name?"
+            android:textColor="#2525CD"
+            android:textSize="13dp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtname"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/edit_bg_shadow"
+            android:hint="Enter Name"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingLeft="8sp"
+            android:paddingTop="5sp"
+            android:paddingRight="5sp"
+            android:paddingBottom="5sp"
+            android:textColorHint="#7C8193"
+            android:textSize="14dp" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_nextone"
+            android:layout_width="100dp"
+            android:textColor="#000000"
+            android:paddingTop="5sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_bottom_gradient"
+            android:text="NEXT"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

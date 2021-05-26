@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".CricketerActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DispName"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="What are the colors in the Indian national flag?"
+            android:textColor="@color/purple_700"
+            tools:ignore="MissingConstraints" />
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) White"
+                android:id="@+id/checkone"
+                android:checked="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) Yellow"
+                android:id="@+id/checktwo"
+                android:checked="false" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) Orange"
+                android:id="@+id/checkthree"
+                android:checked="false" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) Green"
+                android:id="@+id/checkfour"
+                android:checked="false" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnnexttofinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_bottom_gradient"
+            android:text="Next"
+            android:layout_gravity="bottom|right"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="@drawable/imgtwo"
+        />
+
+
+
+</LinearLayout>
